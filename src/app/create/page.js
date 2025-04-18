@@ -51,7 +51,7 @@ const InputForm = () => {
         </h2>
 
         <p className="text-gray-700 text-sm mb-6">
-          Enter the name of your favorite sports celebrity, and we'll generate a
+          Enter the name of your favorite sports celebrity, and we will generate a
           short AI-powered video combining their career history, realistic voice-over,
           and visuals — all built with cutting-edge tech.
         </p>
