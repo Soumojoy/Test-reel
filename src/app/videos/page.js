@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Grid from '../comp/Grid';
 
 const Reelpage = () => {
     const [videos, setVideos] = useState([]);
@@ -83,7 +84,7 @@ const Reelpage = () => {
     if (isLoading) {
         return (
             <div className="h-screen flex items-center justify-center">
-                <div className="text-xl">Loading videos...</div>
+       <div>Loging content</div>
             </div>
         );
     }
