@@ -19,7 +19,7 @@ const InputForm = () => {
       const fetchVideos = async () => {
         const res = await fetch('https://api.pexels.com/videos/search?query=sports&per_page=15', {
           headers: {
-            Authorization: 'RhhQlLLNtTCHFRDnLREDOnI7ZHHlTrw29l57rwSXHeszWyTmxiznR2PM', // 🔥 Your Pexels API Key
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_PEXELS_API_KEY}`, // 🔥 Your Pexels API Key
           },
         });
         const data = await res.json();

@@ -13,7 +13,7 @@ export default function HeroSection() {
     const fetchVideos = async () => {
       const res = await fetch('https://api.pexels.com/videos/search?query=sports&per_page=15', {
         headers: {
-          Authorization: 'RhhQlLLNtTCHFRDnLREDOnI7ZHHlTrw29l57rwSXHeszWyTmxiznR2PM', // 🔥 Your Pexels API Key
+          Authorization: `Bearer ${process.env.NEXT_PUBLIC_PEXELS_API_KEY}`, // 🔥 Your Pexels API Key
         },
       });
       const data = await res.json();
@@ -80,8 +80,14 @@ export default function HeroSection() {
         <section className="text-center mb-12">
           <h1 className="text-4xl text-white">AI-Generated Sports Videos</h1>
           <p className="text-lg mt-4 text-white">
-            <b>Create Personalized Sports Videos in Seconds!</b> Turn your favorite sports moments into dynamic 30-second videos with the power of AI! Simply enter the name of a sports personality, and watch as our platform crafts a visually stunning video celebrating their achievements, highlights, and iconic moments. Whether youu are a fan, a sports analyst, or a brand, our platform provides a quick, easy, and innovative way to create shareable sports content. Dive into the world of sports like never before and let your creativity shine—start generating your personalized sports videos today!
-          </p>
+  <b>Create Personalized Sports Videos in Seconds!</b> Turn your favorite sports moments into dynamic 30-second 
+  videos with the power of AI! Simply enter the name of a sports personality,
+   and watch as our platform crafts a visually stunning video celebrating their achievements, 
+   highlights, and iconic moments. Whether you are a fan, a sports analyst, or a brand, 
+   our platform provides a quick, easy, and innovative way to create shareable sports content. 
+   Dive into the world of sports like never before and let your creativity shine — start generating your personalized sports videos today!
+</p>
+
         </section>
 
         {/* Navigation Divs */}
